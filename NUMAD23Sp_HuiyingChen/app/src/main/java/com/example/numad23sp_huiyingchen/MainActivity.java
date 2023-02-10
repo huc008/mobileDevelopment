@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Huiying Chen chen.huiyi@northeastern.edu", Toast.LENGTH_SHORT)
-                        .show();
+                openActivityAboutMe();
             }
         });
 
@@ -33,10 +32,28 @@ public class MainActivity extends AppCompatActivity {
                 openActivityClicky();
             }
         });
+
+        Button linkListButton = (Button) findViewById(R.id.link_collector);
+        linkListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivityLinkCollector();
+            }
+        });
     }
 
     public void openActivityClicky() {
         Intent intent = new Intent(this, ActivityClicky.class);
+        startActivity(intent);
+    }
+
+    public void openActivityAboutMe() {
+        Intent intent = new Intent(this, AboutMeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivityLinkCollector() {
+        Intent intent = new Intent(this, LinkListActivity.class);
         startActivity(intent);
     }
 }
