@@ -12,6 +12,9 @@
         android:theme="@style/Theme.NUMAD23Sp_HuiyingChen"
         tools:targetApi="31">
         <activity
+            android:name=".SearchPrimeActivity"
+            android:exported="false" />
+        <activity
             android:name=".LinkListActivity"
             android:exported="false" />
         <activity

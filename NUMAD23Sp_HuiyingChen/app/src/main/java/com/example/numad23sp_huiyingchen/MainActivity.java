@@ -40,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 openActivityLinkCollector();
             }
         });
+
+        Button searchPrimeButton = (Button) findViewById(R.id.search_prime);
+        searchPrimeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivitySearchPrime();
+            }
+        });
     }
 
     public void openActivityClicky() {
@@ -54,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivityLinkCollector() {
         Intent intent = new Intent(this, LinkListActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivitySearchPrime() {
+        Intent intent = new Intent(this, SearchPrimeActivity.class);
         startActivity(intent);
     }
 }
