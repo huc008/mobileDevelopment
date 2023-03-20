@@ -48,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 openActivitySearchPrime();
             }
         });
+
+        Button locationButton = (Button) findViewById(R.id.location);
+        locationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openActivityLocation();}
+        });
     }
 
     public void openActivityClicky() {
@@ -67,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivitySearchPrime() {
         Intent intent = new Intent(this, SearchPrimeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openActivityLocation() {
+        Intent intent = new Intent(this, LocationActivity.class);
         startActivity(intent);
     }
 }

@@ -95,24 +95,4 @@ public class SearchPrimeActivity extends AppCompatActivity {
         return flag;
     }
 
-        class FindPrimeRunnable implements Runnable {
-
-            @Override
-            public void run() {
-                final TextView textView = (TextView) findViewById(R.id.editTextNumber);
-                System.out.println("test...view");
-                while (flag) {
-                    System.out.println("enter thread");
-
-                    try {
-                        textView.setText(Integer.toString(i));
-                        TimeUnit.SECONDS.sleep(1);
-                        i += 2;
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-            }
-        }
-
 }

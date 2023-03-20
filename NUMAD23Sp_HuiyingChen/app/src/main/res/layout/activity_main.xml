@@ -6,20 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:id="@+id/aboutme_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About Me"
-        android:layout_below="@+id/textView"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -44,6 +36,14 @@
         android:layout_height="wrap_content"
         android:text="Search Prime"
         android:layout_below="@+id/link_collector"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_below="@+id/search_prime"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
