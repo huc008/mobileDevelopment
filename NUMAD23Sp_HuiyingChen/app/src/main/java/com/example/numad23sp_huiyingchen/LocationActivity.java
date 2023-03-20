@@ -87,7 +87,7 @@ public class LocationActivity extends AppCompatActivity {
                                     originalLocation = currentLocation;
                                 } else {
                                     double distance = originalLocation.distanceTo(currentLocation);
-                                    traveledDistance.setText("Traveled distance: " + distance);
+                                    traveledDistance.setText("Traveled distance: " + distance + " m");
                                 }
 
                                 latitude.setText("Latitude: "+ currentLocation.getLatitude());
